@@ -8,13 +8,25 @@
     tools:context="com.example.aleksey.myac.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <android.support.v7.widget.CardView
+        android:layout_width="352dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:contentPadding="@dimen/cardview_default_radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/info_text"/>
+
+    </android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>
